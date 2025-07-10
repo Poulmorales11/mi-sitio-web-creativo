@@ -1285,3 +1285,58 @@ footer {
   font-size: 0.85rem;
   opacity: 0.8;
 }
+
+/*------------------------------*/
+.equipo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* centra las tarjetas */
+  gap: 2rem;                /* espacio entre tarjetas */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.miembro {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1 1 280px;        /* ancho base adaptable */
+  max-width: 350px;       /* no más de esto en pantallas grandes */
+  min-width: 260px;
+  transition: transform 0.3s;
+}
+
+.miembro img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #3f51b5;
+  margin-bottom: 1rem;
+}
+
+.miembro h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.rol {
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .miembro {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
